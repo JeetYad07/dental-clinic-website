@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-on-surface": "#eef0ff", "surface-container-low": "#f2f3ff", "error-container": "#ffdad6", "surface-dim": "#d2d9f4", "surface-bright": "#faf8ff", "on-tertiary-fixed-variant": "#653e00", "outline": "#6f797b", "inverse-primary": "#8fd1de", "tertiary-fixed-dim": "#ffb95f", "on-error-container": "#93000a", "on-surface": "#131b2e", "on-tertiary-fixed": "#2a1700", "surface-container": "#eaedff", "on-primary-container": "#90d2df", "on-primary": "#ffffff", "secondary": "#006c49", "surface-container-lowest": "#ffffff", "background": "#faf8ff", "secondary-container": "#6cf8bb", "on-error": "#ffffff", "on-background": "#131b2e", "surface-tint": "#1e6772", "surface-container-highest": "#dae2fd", "secondary-fixed-dim": "#4edea3", "on-tertiary": "#ffffff", "surface-container-high": "#e2e7ff", "tertiary": "#563400", "tertiary-container": "#764900", "on-primary-fixed": "#001f24", "secondary-fixed": "#6ffbbe", "inverse-surface": "#283044", "primary-fixed": "#abedfa", "outline-variant": "#bfc8ca", "primary": "#00434c", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#004f58", "on-secondary-fixed": "#002113", "on-surface-variant": "#3f484a", "tertiary-fixed": "#ffddb8", "primary-fixed-dim": "#8fd1de", "on-secondary-container": "#00714d", "surface-variant": "#dae2fd", "error": "#ba1a1a", "surface": "#faf8ff", "on-tertiary-container": "#ffb960", "primary-container": "#0a5c67", "on-secondary-fixed-variant": "#005236" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "gutter": "1.5rem", "margin": "2rem", "gutter-sm": "1rem", "margin-sm": "1rem" }, fontFamily: { "title-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"] }, fontSize: { "title-md": ["18px", { "lineHeight": "26px", "letterSpacing": "0", "fontWeight": "600" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(10,92,103,0.06)]"><div class="h-20 px-space-md flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><img alt="Brand logo. - Primary color: #0a5c67
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VXFHUKG52vpk5WicwxXcmlTY1QXxZU_KrNmpvq5oXOcA81-RntLmMcDilPyzPmGfQM574H1WOAz02jJTas_WuMvy-nTQ3HnuBFnDTlSziT_MN3wQJpgH8eu4aQMHRB2Sw19YBlFP_p2uf5GIj97olv4_eg0Hz4jFkbHh72chBX2L0mzIDJx1BjGS6CeFdsZkTeP2dc6JBL_N8FIXwmE3r78xRcclt9i9xrtK6tIoj-BPDSkDCJA4xhPHcI"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-primary truncate tracking-tight">Tooth Story</span><div class="flex items-center gap-0.5 bg-amber-50 px-1.5 py-0.5 rounded-full shrink-0 shadow-[0_1px_4px_rgba(180,83,9,0.08)]"><span class="material-symbols-outlined text-[12px] text-amber-500 fill-1">star</span><span class="font-label-sm text-[11px] font-bold text-amber-900 leading-none">4.9</span></div></div><div class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0 animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Neeladri Nagar • Open till 10 PM</span></div></div></div><div class="flex items-center gap-space-xs shrink-0"><a aria-label="Call Clinic Desk" class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-primary active:scale-95 transition-transform" href="tel:+918000000000"><span class="material-symbols-outlined text-[20px]">call</span></a><a aria-label="Patient Profile" class="w-11 h-11 flex items-center justify-center rounded-full" data-path="patient-profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/10" src="https://lh3.googleusercontent.com/aida/AEtjO1V7r6PcKpCT9363pXIPmyIsMpmd8mmuf3roEHc58p-oo8HDR6IIqoa0saik6M6YzEwYGgUWMAh06BM_kjDiU4b6eFJKHYD1E_IchLzBD0_0f_wA3Kx9VU_pZtabSC2j9ptab_V4TuYckLW5dzB1PxxhWC1sQBWhgh1KZg92Im19DkMjG4Ierndfv7_xuzksiTDTP7TAn8QIqFF8LcmmW_Wo4Jgup7bg8iHAs0bF30I4BCcRI77jT5qVivVQ"/></a></div></div></header><main class="flex-1 w-full bg-surface pt-20 pb-28"><div class="flex flex-col w-full">
+<div class="flex flex-col gap-space-lg px-space-md py-space-md">
+<!-- Trust & Doctor Spotlight Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-28 h-28 bg-primary/5 rounded-full pointer-events-none"></div>
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-sm text-headline-sm text-primary">Tooth Story</span>
+<span class="bg-primary/10 text-primary px-2 py-0.5 rounded-full font-label-sm text-label-sm">E-City Phase 1</span>
+</div>
+<div class="flex items-center gap-1.5 mt-0.5">
+<div class="flex items-center gap-1 bg-amber-50 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[13px] text-amber-500" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="font-label-sm text-label-sm text-on-surface font-bold">4.9</span>
+</div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">(480+ Google Reviews)</span>
+</div>
+</div>
+<a class="flex items-center gap-1.5 bg-primary-container text-on-primary px-3 py-2 rounded-full shadow-sm active:scale-95 transition-transform shrink-0" href="tel:09036940356">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span class="font-label-sm text-label-sm">Call Desk</span>
+</a>
+</div>
+<!-- Doctor Profiles & Clinic Timing Micro-pills -->
+<div class="flex flex-wrap items-center gap-space-xs pt-space-xs">
+<div class="flex items-center gap-1.5 bg-surface-container px-2.5 py-1 rounded-full text-on-surface">
+<span class="material-symbols-outlined text-[15px] text-primary">verified_user</span>
+<span class="font-label-sm text-label-sm font-semibold">Dr. Dhanashree (BDS, MDS) &amp; Dr. Anand</span>
+</div>
+<div class="flex items-center gap-1.5 bg-secondary-container/40 text-on-secondary-container px-2.5 py-1 rounded-full">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm font-medium">Open till 10:00 PM</span>
+</div>
+</div>
+</div>
+<!-- Treatment Selector Section -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h2 class="font-title-md text-title-md text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-primary">dentistry</span>
+          Select Treatment
+        </h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 1 of 3</span>
+</div>
+<div class="flex flex-col gap-2 pt-1" id="treatmentGrid">
+<button class="treatment-option flex items-center justify-between p-3.5 rounded-xl bg-primary-container text-on-primary shadow-sm text-left transition-all active:scale-[0.99]" data-price="from ₹3,500" data-treatment="Root Canal Treatment" type="button">
+<div class="flex items-center gap-3 min-w-0">
+<span class="w-9 h-9 rounded-lg bg-surface-container-lowest/20 flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">healing</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md font-bold truncate">Emergency Tooth Pain / Root Canal</span>
+<span class="font-body-sm text-body-sm text-on-primary-container opacity-90">Single sitting option available</span>
+</div>
+</div>
+<span class="font-label-md text-label-md font-bold shrink-0 ml-2">from ₹3,500</span>
+</button>
+<button class="treatment-option flex items-center justify-between p-3.5 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm text-left transition-all active:scale-[0.99]" data-price="from ₹2,500" data-treatment="Wisdom Tooth Extraction" type="button">
+<div class="flex items-center gap-3 min-w-0">
+<span class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">medical_services</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md truncate">Wisdom Tooth Extraction</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Painless laser &amp; surgical tech</span>
+</div>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary shrink-0 ml-2">from ₹2,500</span>
+</button>
+<button class="treatment-option flex items-center justify-between p-3.5 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm text-left transition-all active:scale-[0.99]" data-price="from ₹35,000" data-treatment="Braces &amp; Clear Aligners" type="button">
+<div class="flex items-center gap-3 min-w-0">
+<span class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">mood</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md truncate">Braces &amp; Clear Aligners</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Invisalign &amp; Ceramic brackets</span>
+</div>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary shrink-0 ml-2">from ₹35,000</span>
+</button>
+<button class="treatment-option flex items-center justify-between p-3.5 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm text-left transition-all active:scale-[0.99]" data-price="from ₹1,200" data-treatment="Teeth Cleaning &amp; Stain Removal" type="button">
+<div class="flex items-center gap-3 min-w-0">
+<span class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">clean_hands</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md truncate">Teeth Cleaning &amp; Polishing</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Ultrasonic scaling &amp; stain wipe</span>
+</div>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary shrink-0 ml-2">from ₹1,200</span>
+</button>
+<button class="treatment-option flex items-center justify-between p-3.5 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm text-left transition-all active:scale-[0.99]" data-price="₹500" data-treatment="Consultation &amp; Digital X-Ray" type="button">
+<div class="flex items-center gap-3 min-w-0">
+<span class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[20px]">radiology</span>
+</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md truncate">Consultation &amp; Digital X-Ray</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Comprehensive dental checkup</span>
+</div>
+</div>
+<span class="font-label-md text-label-md font-semibold text-primary shrink-0 ml-2">₹500</span>
+</button>
+</div>
+</div>
+<!-- Date & Slot Timing Section -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h2 class="font-title-md text-title-md text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-primary">schedule</span>
+          Appointment Slot
+        </h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 2 of 3</span>
+</div>
+<!-- Quick Date Selector -->
+<div class="grid grid-cols-4 gap-2 pt-1" id="datePickerGroup">
+<button class="date-chip flex flex-col items-center justify-center py-2.5 px-1 rounded-xl bg-primary-container text-on-primary shadow-sm transition-all text-center" data-date="Today (Oct 24)" type="button">
+<span class="font-label-sm text-label-sm uppercase opacity-80">Thu</span>
+<span class="font-title-md text-title-md font-bold">24</span>
+<span class="font-label-sm text-[11px] font-semibold">Today</span>
+</button>
+<button class="date-chip flex flex-col items-center justify-center py-2.5 px-1 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm transition-all text-center" data-date="Tomorrow (Oct 25)" type="button">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Fri</span>
+<span class="font-title-md text-title-md font-bold">25</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Tmrw</span>
+</button>
+<button class="date-chip flex flex-col items-center justify-center py-2.5 px-1 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm transition-all text-center" data-date="Saturday (Oct 26)" type="button">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Sat</span>
+<span class="font-title-md text-title-md font-bold">26</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Weekend</span>
+</button>
+<button class="date-chip flex flex-col items-center justify-center py-2.5 px-1 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm transition-all text-center" data-date="Sunday (Oct 27)" type="button">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Sun</span>
+<span class="font-title-md text-title-md font-bold">27</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">Select</span>
+</button>
+</div>
+<!-- Time Blocks -->
+<div class="flex flex-col gap-2.5 mt-2">
+<!-- Morning -->
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">wb_twilight</span> Morning
+          </span>
+<div class="flex items-center gap-2">
+<button class="time-chip flex-1 py-2 px-3 rounded-lg bg-surface-container-lowest text-on-surface text-center font-label-md text-label-md shadow-sm" data-time="10:30 AM" type="button">10:30 AM</button>
+<button class="time-chip flex-1 py-2 px-3 rounded-lg bg-surface-container-lowest text-on-surface text-center font-label-md text-label-md shadow-sm" data-time="11:45 AM" type="button">11:45 AM</button>
+</div>
+</div>
+<!-- Afternoon -->
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">sunny</span> Afternoon
+          </span>
+<div class="flex items-center gap-2">
+<button class="time-chip flex-1 py-2 px-3 rounded-lg bg-surface-container-lowest text-on-surface text-center font-label-md text-label-md shadow-sm" data-time="02:00 PM" type="button">02:00 PM</button>
+<button class="time-chip flex-1 py-2 px-3 rounded-lg bg-surface-container-lowest text-on-surface text-center font-label-md text-label-md shadow-sm" data-time="04:30 PM" type="button">04:30 PM</button>
+</div>
+</div>
+<!-- Evening (Popular) -->
+<div class="flex flex-col gap-1">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">mode_night</span> Evening (Popular for Tech-corridor)
+          </span>
+<div class="flex flex-col gap-2">
+<button class="time-chip py-2.5 px-3 rounded-lg bg-primary-container text-on-primary text-center font-label-md text-label-md font-bold shadow-sm flex items-center justify-between" data-time="06:00 PM" type="button">
+<span>06:00 PM</span>
+<span class="bg-surface-container-lowest/20 font-label-sm text-label-sm px-2 py-0.5 rounded-full">Recommended</span>
+</button>
+<div class="flex items-center gap-2">
+<button class="time-chip flex-1 py-2 px-3 rounded-lg bg-surface-container-lowest text-on-surface text-center font-label-md text-label-md shadow-sm" data-time="07:30 PM" type="button">07:30 PM</button>
+<button class="time-chip flex-1 py-2 px-3 rounded-lg bg-surface-container-lowest text-on-surface text-center font-label-md text-label-md shadow-sm" data-time="08:45 PM" type="button">08:45 PM (Open)</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Patient Quick Details Form -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<h2 class="font-title-md text-title-md text-primary flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[20px] text-primary">person_outline</span>
+          Patient Details
+        </h2>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Step 3 of 3</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-3">
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold" for="patientName">Patient Full Name</label>
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-2.5 rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-outline">badge</span>
+<input class="bg-transparent text-on-surface font-body-md text-body-md w-full outline-none" id="patientName" placeholder="e.g. Priya Sharma" type="text" value="Priya Sharma"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold" for="patientPhone">WhatsApp Mobile Number</label>
+<div class="flex items-center gap-2 bg-surface-container-low px-3 py-2.5 rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-secondary">phone_iphone</span>
+<input class="bg-transparent text-on-surface font-body-md text-body-md w-full outline-none" id="patientPhone" placeholder="+91 98765 43210" type="tel" value="+91 98765 43210"/>
+</div>
+</div>
+<div class="flex flex-col gap-1">
+<label class="font-label-sm text-label-sm text-on-surface-variant font-semibold" for="patientNotes">Symptom Note (Optional)</label>
+<div class="flex items-start gap-2 bg-surface-container-low px-3 py-2.5 rounded-lg">
+<span class="material-symbols-outlined text-[18px] text-outline mt-0.5">description</span>
+<textarea class="bg-transparent text-on-surface font-body-sm text-body-sm w-full outline-none resize-none" id="patientNotes" placeholder="e.g. Mild pain in upper left molar when drinking cold water" rows="2">Mild pain in upper molar</textarea>
+</div>
+</div>
+</div>
+</div>
+<!-- Live WhatsApp Chat Bubble Preview -->
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-secondary font-bold flex items-center gap-1 uppercase tracking-wider">
+<span class="material-symbols-outlined text-[16px] text-secondary">mark_chat_unread</span> Live WhatsApp Message Preview
+        </span>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Auto-formatted</span>
+</div>
+<div class="bg-surface-container-lowest rounded-xl shadow-sm overflow-hidden">
+<!-- Chat App Bar Header -->
+<div class="bg-secondary text-on-secondary px-4 py-2.5 flex items-center justify-between">
+<div class="flex items-center gap-2 min-w-0">
+<div class="w-7 h-7 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-bold text-xs">
+              TS
+            </div>
+<div class="flex flex-col min-w-0">
+<span class="font-label-sm text-label-sm font-bold truncate">Tooth Story Official Desk</span>
+<span class="font-label-sm text-[10px] text-secondary-container truncate">+91 90369 40356 • Typically replies instantly</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+<!-- Chat Body with Preview Bubble -->
+<div class="p-3.5 bg-surface-container-low flex flex-col items-end">
+<div class="bg-secondary-container/30 text-on-surface rounded-xl rounded-tr-none p-3 shadow-sm max-w-[92%] flex flex-col gap-1.5">
+<p class="font-body-sm text-body-sm leading-relaxed" id="waMessageContent">
+              Hello Tooth Story Team! 👋 I would like to book a dental slot:<br/>
+              👤 <strong class="text-primary" id="previewName">Priya Sharma</strong><br/>
+              🦷 <strong id="previewTreatment">Root Canal Treatment</strong><br/>
+              📅 <span id="previewSlot">Today (Oct 24), 06:00 PM</span><br/>
+              📝 <span class="italic text-on-surface-variant" id="previewNotes">Note: Mild pain in upper molar</span><br/>
+              📍 <em>Branch: Neeladri Road, E-City Phase 1.</em><br/>
+              Please confirm availability!
+            </p>
+<div class="flex items-center justify-end gap-1 self-end mt-0.5">
+<span class="font-label-sm text-[10px] text-on-surface-variant">Just now</span>
+<span class="material-symbols-outlined text-[14px] text-secondary">done_all</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Sticky / Large Primary Action Trigger -->
+<div class="flex flex-col gap-2 pt-1">
+<a class="w-full bg-secondary text-on-secondary py-3.5 px-4 rounded-full shadow-lg flex items-center justify-center gap-2 active:scale-98 transition-transform" href="https://wa.me/919036940356?text=Hello%20Tooth%20Story%20Team!%20I%20would%20like%20to%20book%20a%20dental%20slot%20for%20Priya%20Sharma%20-%20Root%20Canal%20Today%2006:00%20PM" id="btnWhatsAppSubmit" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+<span class="font-title-md text-title-md font-bold tracking-tight">Open WhatsApp to Confirm</span>
+</a>
+<div class="flex items-center justify-center gap-3 text-center">
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">bolt</span> Avg reply &lt; 3 mins
+        </span>
+<span class="w-1 h-1 rounded-full bg-outline"></span>
+<span class="font-label-sm text-label-sm text-on-surface-variant flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">check_circle</span> No pre-payment
+        </span>
+</div>
+</div>
+<!-- Location & Directions Micro Card -->
+<div class="bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col gap-space-sm">
+<div class="flex items-start justify-between gap-space-sm">
+<div class="flex items-start gap-2.5 min-w-0">
+<div class="w-10 h-10 rounded-xl bg-surface-container flex items-center justify-center text-primary shrink-0">
+<span class="material-symbols-outlined text-[22px]">location_on</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md font-bold text-on-surface">Tooth Story Neeladri Clinic</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant leading-tight mt-0.5">Malligue Residency, 16th Cross Rd, Neeladri Nagar, Electronic City Phase 1, Bengaluru</span>
+</div>
+</div>
+</div>
+<div class="flex flex-wrap items-center gap-2">
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-full text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary">directions_walk</span>
+<span class="font-label-sm text-label-sm">2 min from Wipro Gate 5</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container px-2 py-1 rounded-full text-on-surface-variant">
+<span class="material-symbols-outlined text-[14px] text-primary">local_parking</span>
+<span class="font-label-sm text-label-sm">Free 2 &amp; 4 Wheeler Parking</span>
+</div>
+</div>
+<!-- Static Map Preview Container -->
+<div class="w-full h-32 rounded-lg bg-cover bg-center overflow-hidden relative shadow-inner" data-alt="High angle architectural view of a bright modern boutique dental clinic clinic in Electronic City Neeladri Nagar with ambient morning sunshine glass facade and parking area Bangalore Karnataka" data-location="Malligue Residency Neeladri Nagar Electronic City Phase 1 Bangalore" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCtToPogWhyBc7jUpENR6Saqey0tDsId2eJv9-eKDJbqIErHuZgSsThFzjMrd5VFbY5sBzANP_l_RitBeKaoe-rgzL2PjuDGsOXAOc7m4GTjoE4yuM90rGO2mvdVXDt8N3HKU_X27TThhy27uNoI_WUM_a3ljk6gweA241IdwZ9x0mcBuJqbJT83-cWnPwVPBOe8wSZ3itx-83Mx7Jbhy9KpESAi6Dl6D-gpT5N6fbnwP0EejKNovzx4A')">
+<div class="absolute inset-0 bg-primary/20 backdrop-blur-[1px] flex items-center justify-center">
+<a class="bg-surface-container-lowest/95 text-primary px-3.5 py-2 rounded-full shadow-md font-label-sm text-label-sm font-bold flex items-center gap-1.5 active:scale-95 transition-transform" href="https://maps.google.com/?q=Tooth+Story+Dental+Clinic+Neeladri+Nagar" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[16px] text-secondary">near_me</span>
+            Open Google Maps (RJRW+C3)
+          </a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initBookingInteraction() {
+    let state = {
+      treatment: 'Root Canal Treatment',
+      date: 'Today (Oct 24)',
+      time: '06:00 PM',
+      name: 'Priya Sharma',
+      notes: 'Mild pain in upper molar'
+    };
+
+    const treatmentBtns = document.querySelectorAll('.treatment-option');
+    const dateBtns = document.querySelectorAll('.date-chip');
+    const timeBtns = document.querySelectorAll('.time-chip');
+    const nameInput = document.getElementById('patientName');
+    const notesInput = document.getElementById('patientNotes');
+
+    const previewName = document.getElementById('previewName');
+    const previewTreatment = document.getElementById('previewTreatment');
+    const previewSlot = document.getElementById('previewSlot');
+    const previewNotes = document.getElementById('previewNotes');
+    const btnWhatsApp = document.getElementById('btnWhatsAppSubmit');
+
+    function updatePreviewAndLink() {
+      if (previewName) previewName.textContent = state.name || 'Patient';
+      if (previewTreatment) previewTreatment.textContent = state.treatment;
+      if (previewSlot) previewSlot.textContent = `${state.date}, ${state.time}`;
+      if (previewNotes) {
+        if (state.notes.trim()) {
+          previewNotes.textContent = `Note: ${state.notes.trim()}`;
+          previewNotes.classList.remove('hidden');
+        } else {
+          previewNotes.classList.add('hidden');
+        }
+      }
+
+      const messageText = `Hello Tooth Story Team! 👋 I would like to book a dental slot:
+👤 Name: ${state.name || 'Guest'}
+🦷 Treatment: ${state.treatment}
+📅 Date & Time: ${state.date}, ${state.time}
+${state.notes ? '📝 Note: ' + state.notes + '\n' : ''}📍 Branch: Neeladri Road, E-City Phase 1.
+Please confirm availability!`;
+
+      if (btnWhatsApp) {
+        btnWhatsApp.href = `https://wa.me/919036940356?text=${encodeURIComponent(messageText)}`;
+      }
+    }
+
+    treatmentBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        treatmentBtns.forEach(b => {
+          b.classList.remove('bg-primary-container', 'text-on-primary');
+          b.classList.add('bg-surface-container-lowest', 'text-on-surface');
+          const badge = b.querySelector('.treatment-price-badge');
+          if (badge) badge.classList.add('text-primary');
+        });
+        btn.classList.add('bg-primary-container', 'text-on-primary');
+        btn.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+        
+        state.treatment = btn.getAttribute('data-treatment') || 'Dental Consultation';
+        updatePreviewAndLink();
+      });
+    });
+
+    dateBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        dateBtns.forEach(b => {
+          b.classList.remove('bg-primary-container', 'text-on-primary');
+          b.classList.add('bg-surface-container-lowest', 'text-on-surface');
+        });
+        btn.classList.add('bg-primary-container', 'text-on-primary');
+        btn.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+
+        state.date = btn.getAttribute('data-date') || 'Today';
+        updatePreviewAndLink();
+      });
+    });
+
+    timeBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        timeBtns.forEach(b => {
+          b.classList.remove('bg-primary-container', 'text-on-primary');
+          b.classList.add('bg-surface-container-lowest', 'text-on-surface');
+        });
+        btn.classList.add('bg-primary-container', 'text-on-primary');
+        btn.classList.remove('bg-surface-container-lowest', 'text-on-surface');
+
+        state.time = btn.getAttribute('data-time') || '06:00 PM';
+        updatePreviewAndLink();
+      });
+    });
+
+    if (nameInput) {
+      nameInput.addEventListener('input', (e) => {
+        state.name = e.target.value;
+        updatePreviewAndLink();
+      });
+    }
+
+    if (notesInput) {
+      notesInput.addEventListener('input', (e) => {
+        state.notes = e.target.value;
+        updatePreviewAndLink();
+      });
+    }
+
+    updatePreviewAndLink();
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(10,92,103,0.06)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-space-sm"><a aria-label="Clinic Home" class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="home-clinic" href="#"><span class="material-symbols-outlined text-[22px]">local_hospital</span><span class="font-label-sm text-[11px]">Clinic</span></a><a aria-label="Dental Treatments" class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="treatments-catalog" href="#"><span class="material-symbols-outlined text-[22px]">dentistry</span><span class="font-label-sm text-[11px]">Treatments</span></a><a aria-current="page" aria-label="Book Appointment" class="flex flex-col items-center justify-center -mt-5 text-primary font-bold" data-path="appointment-slots" href="#"><div class="w-13 h-13 rounded-full bg-primary-container text-on-primary shadow-[0_8px_20px_rgba(10,92,103,0.35)] flex items-center justify-center active:scale-95 transition-transform"><span class="material-symbols-outlined text-[24px]">calendar_month</span></div><span class="font-label-sm text-[10px] font-bold text-primary mt-1">Book Now</span></a><a aria-label="WhatsApp Quick Desk" class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-secondary transition-colors" href="https://wa.me/918000000000"><span class="material-symbols-outlined text-[22px]">chat</span><span class="font-label-sm text-[11px] font-semibold text-secondary">WhatsApp</span></a><a aria-label="My Appointments" class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="my-appointments" href="#"><span class="material-symbols-outlined text-[22px]">history_edu</span><span class="font-label-sm text-[11px]">Visits</span></a></div></nav></body></html>

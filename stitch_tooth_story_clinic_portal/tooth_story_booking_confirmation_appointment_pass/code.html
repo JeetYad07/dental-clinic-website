@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "inverse-on-surface": "#eef0ff", "surface-container-low": "#f2f3ff", "error-container": "#ffdad6", "surface-dim": "#d2d9f4", "surface-bright": "#faf8ff", "on-tertiary-fixed-variant": "#653e00", "outline": "#6f797b", "inverse-primary": "#8fd1de", "tertiary-fixed-dim": "#ffb95f", "on-error-container": "#93000a", "on-surface": "#131b2e", "on-tertiary-fixed": "#2a1700", "surface-container": "#eaedff", "on-primary-container": "#90d2df", "on-primary": "#ffffff", "secondary": "#006c49", "surface-container-lowest": "#ffffff", "background": "#faf8ff", "secondary-container": "#6cf8bb", "on-error": "#ffffff", "on-background": "#131b2e", "surface-tint": "#1e6772", "surface-container-highest": "#dae2fd", "secondary-fixed-dim": "#4edea3", "on-tertiary": "#ffffff", "surface-container-high": "#e2e7ff", "tertiary": "#563400", "tertiary-container": "#764900", "on-primary-fixed": "#001f24", "secondary-fixed": "#6ffbbe", "inverse-surface": "#283044", "primary-fixed": "#abedfa", "outline-variant": "#bfc8ca", "primary": "#00434c", "on-secondary": "#ffffff", "on-primary-fixed-variant": "#004f58", "on-secondary-fixed": "#002113", "on-surface-variant": "#3f484a", "tertiary-fixed": "#ffddb8", "primary-fixed-dim": "#8fd1de", "on-secondary-container": "#00714d", "surface-variant": "#dae2fd", "error": "#ba1a1a", "surface": "#faf8ff", "on-tertiary-container": "#ffb960", "primary-container": "#0a5c67", "on-secondary-fixed-variant": "#005236" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xs": "0.25rem", "space-md": "1rem", "space-sm": "0.5rem", "space-xl": "2.5rem", "space-lg": "1.5rem", "gutter": "1.5rem", "margin": "2rem", "gutter-sm": "1rem", "margin-sm": "1rem" }, fontFamily: { "title-md": ["Plus Jakarta Sans"], "display-lg-mobile": ["Plus Jakarta Sans"], "headline-xl": ["Plus Jakarta Sans"], "label-md": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "label-sm": ["Plus Jakarta Sans"], "headline-lg": ["Plus Jakarta Sans"], "body-sm": ["Plus Jakarta Sans"], "headline-md": ["Plus Jakarta Sans"], "display-lg": ["Plus Jakarta Sans"], "headline-xl-mobile": ["Plus Jakarta Sans"] }, fontSize: { "title-md": ["18px", { "lineHeight": "26px", "letterSpacing": "0", "fontWeight": "600" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "800" }], "headline-xl": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "body-md": ["16px", { "lineHeight": "24px", "letterSpacing": "0", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }], "label-sm": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.015em", "fontWeight": "700" }], "body-sm": ["14px", { "lineHeight": "20px", "letterSpacing": "0.005em", "fontWeight": "400" }], "headline-md": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.025em", "fontWeight": "800" }], "headline-xl-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.015em", "fontWeight": "700" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;background-color:#faf8ff;}body{overscroll-behavior-y:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head><body class="bg-surface text-on-surface font-body-md min-h-screen flex flex-col antialiased selection:bg-primary-fixed selection:text-on-primary-fixed"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_12px_rgba(10,92,103,0.06)]"><div class="h-20 px-space-md flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-sm min-w-0 flex-1"><img alt="Brand logo. - Primary color: #0a5c67
+- Font: plusJakartaSans
+- Mode: light
+- Roundness: rounded-md
+" class="h-8 w-auto object-contain shrink-0" src="https://lh3.googleusercontent.com/aida/AEtjO1VXFHUKG52vpk5WicwxXcmlTY1QXxZU_KrNmpvq5oXOcA81-RntLmMcDilPyzPmGfQM574H1WOAz02jJTas_WuMvy-nTQ3HnuBFnDTlSziT_MN3wQJpgH8eu4aQMHRB2Sw19YBlFP_p2uf5GIj97olv4_eg0Hz4jFkbHh72chBX2L0mzIDJx1BjGS6CeFdsZkTeP2dc6JBL_N8FIXwmE3r78xRcclt9i9xrtK6tIoj-BPDSkDCJA4xhPHcI"/><div class="flex flex-col min-w-0"><div class="flex items-center gap-space-xs"><span class="font-title-md text-title-md text-primary truncate tracking-tight">Tooth Story</span><div class="flex items-center gap-0.5 bg-amber-50 px-1.5 py-0.5 rounded-full shrink-0 shadow-[0_1px_4px_rgba(180,83,9,0.08)]"><span class="material-symbols-outlined text-[12px] text-amber-500 fill-1">star</span><span class="font-label-sm text-[11px] font-bold text-amber-900 leading-none">4.9</span></div></div><div class="flex items-center gap-1.5"><span class="w-1.5 h-1.5 rounded-full bg-secondary shrink-0 animate-pulse"></span><span class="font-label-sm text-label-sm text-on-surface-variant truncate">Neeladri Nagar • Open till 10 PM</span></div></div></div><div class="flex items-center gap-space-xs shrink-0"><a aria-label="Call Clinic Desk" class="w-11 h-11 rounded-full bg-surface-container flex items-center justify-center text-primary active:scale-95 transition-transform" href="tel:+918000000000"><span class="material-symbols-outlined text-[20px]">call</span></a><a aria-label="Patient Profile" class="w-11 h-11 flex items-center justify-center rounded-full" data-path="patient-profile" href="#"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary/10" src="https://lh3.googleusercontent.com/aida/AEtjO1V7r6PcKpCT9363pXIPmyIsMpmd8mmuf3roEHc58p-oo8HDR6IIqoa0saik6M6YzEwYGgUWMAh06BM_kjDiU4b6eFJKHYD1E_IchLzBD0_0f_wA3Kx9VU_pZtabSC2j9ptab_V4TuYckLW5dzB1PxxhWC1sQBWhgh1KZg92Im19DkMjG4Ierndfv7_xuzksiTDTP7TAn8QIqFF8LcmmW_Wo4Jgup7bg8iHAs0bF30I4BCcRI77jT5qVivVQ"/></a></div></div></header><main class="flex-1 w-full bg-surface pt-20 pb-28"><div class="flex flex-col w-full">
+<div class="px-space-md pt-2 pb-space-lg flex flex-col gap-space-md">
+<!-- Status Celebration Pill -->
+<div class="flex items-center gap-space-sm bg-secondary/10 px-space-md py-space-sm rounded-full">
+<div class="w-6 h-6 rounded-full bg-secondary text-on-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-label-sm text-label-sm text-secondary truncate font-bold">Booking Request Received &amp; Desk Reserved</p>
+</div>
+<span class="font-label-sm text-[11px] font-semibold text-secondary/80 shrink-0">#TS-EC-8942</span>
+</div>
+<!-- Reassurance Notification Banner -->
+<div class="bg-surface-container-low p-space-md rounded-xl shadow-sm flex items-start gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+</div>
+<div class="flex-1 min-w-0">
+<p class="font-label-md text-label-md text-on-surface font-semibold">Synced with Dr. Dhanashree's Desk</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Verified via WhatsApp assistant. Active desk reply typical time: &lt; 3 mins.</p>
+</div>
+</div>
+<!-- Tactile Digital Dental Boarding Pass -->
+<div class="bg-surface-container-lowest rounded-xl shadow-md overflow-hidden flex flex-col">
+<!-- Pass Header Accent -->
+<div class="bg-primary p-space-md text-on-primary flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px] text-primary-fixed">verified</span>
+<span class="font-label-sm text-label-sm text-primary-fixed tracking-wider uppercase">Digital Priority Pass</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-primary/90 bg-primary-container px-2 py-0.5 rounded-full">Neeladri Phase 1</span>
+</div>
+<!-- Ticket Core Top Body -->
+<div class="p-space-lg flex flex-col gap-space-md">
+<!-- Clinic & Doctor Profile -->
+<div class="flex items-start justify-between gap-space-sm">
+<div class="min-w-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Consulting Specialist</span>
+<p class="font-headline-sm text-headline-sm text-on-surface truncate">Dr. Dhanashree</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">BDS, MDS • Chief Dental Surgeon</p>
+</div>
+<div class="w-12 h-12 rounded-xl bg-surface-container flex items-center justify-center shrink-0 overflow-hidden shadow-sm">
+<img class="w-full h-full object-cover" data-alt="Warm and confident Indian female doctor in clinical teal scrubs smiling reassuringly at the clinic front desk in a pristine dental center" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCmC__NFtBHez3hUsFcPImG8L_X0_7MysXl21vCxUVUZy-z53ge4dczg9_dfEOX5isK4WA52TgntNKLhF83QBxfnJlsM0sYYztW5XvR39R2_UJFgk0_ZqgpjHpq-yuGccRYCzkMDBejzUVny22-2XV5fD1FYixhn253SqoYU5bp4SSEdDrWHY1LtxoFFWZwoogKNU5XsCC_CA-WuppCMIasgRr8It_TCbkAAZiZZYlo5XDhkFgAr1BIgw"/>
+</div>
+</div>
+<!-- Patient & Reason Bento -->
+<div class="grid grid-cols-2 gap-space-sm bg-surface-container-low p-space-md rounded-xl">
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Patient</p>
+<p class="font-label-md text-label-md text-on-surface truncate">Priya Sharma</p>
+<p class="font-label-sm text-[11px] text-on-surface-variant truncate">+91 98765 43210</p>
+</div>
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface-variant">Concern</p>
+<p class="font-label-md text-label-md text-primary font-bold truncate">Emergency Pain</p>
+<p class="font-label-sm text-[11px] text-on-surface-variant truncate">Root Canal Check</p>
+</div>
+</div>
+<!-- Appointment Time & Slot Focus -->
+<div class="flex items-center justify-between bg-primary-fixed/20 p-space-md rounded-xl">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full bg-primary-container text-on-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[20px]">schedule</span>
+</div>
+<div>
+<p class="font-label-sm text-label-sm text-primary uppercase font-bold">Today, 24 Oct</p>
+<p class="font-headline-sm text-headline-sm text-primary font-bold">06:00 PM</p>
+</div>
+</div>
+<span class="font-label-sm text-[11px] bg-surface-container-lowest text-primary font-bold px-2 py-1 rounded-full shadow-sm">Operatory 02</span>
+</div>
+<!-- Billing Note -->
+<div class="flex items-center justify-between px-space-xs">
+<div>
+<p class="font-label-sm text-label-sm text-on-surface-variant">Consultation Fee</p>
+<p class="font-label-md text-label-md text-on-surface font-bold">₹500 <span class="font-body-sm text-[11px] text-on-surface-variant font-normal">(Pay at clinic)</span></p>
+</div>
+<div class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px] text-secondary">payments</span>
+<span class="font-label-sm text-[11px] text-on-surface-variant">UPI / Cash / Card</span>
+</div>
+</div>
+</div>
+<!-- Ticket Perforation Tear Line -->
+<div class="relative flex items-center justify-between my-0">
+<div class="w-4 h-8 bg-surface rounded-r-full -ml-2"></div>
+<div class="flex-1 mx-2 flex items-center justify-center overflow-hidden">
+<div class="w-full flex justify-between gap-1.5 opacity-30">
+<span class="w-2 h-0.5 bg-outline rounded-full"></span>
+<span class="w-2 h-0.5 bg-outline rounded-full"></span>
+<span class="w-2 h-0.5 bg-outline rounded-full"></span>
+<span class="w-2 h-0.5 bg-outline rounded-full"></span>
+<span class="w-2 h-0.5 bg-outline rounded-full"></span>
+<span class="w-2 h-0.5 bg-outline rounded-full"></span>
+<span class="w-2 h-0.5 bg-outline rounded-full"></span>
+<span class="w-2 h-0.5 bg-outline rounded-full"></span>
+<span class="w-2 h-0.5 bg-outline rounded-full"></span>
+<span class="w-2 h-0.5 bg-outline rounded-full"></span>
+<span class="w-2 h-0.5 bg-outline rounded-full"></span>
+<span class="w-2 h-0.5 bg-outline rounded-full"></span>
+<span class="w-2 h-0.5 bg-outline rounded-full"></span>
+<span class="w-2 h-0.5 bg-outline rounded-full"></span>
+</div>
+</div>
+<div class="w-4 h-8 bg-surface rounded-l-full -mr-2"></div>
+</div>
+<!-- Ticket Express Check-in Stub -->
+<div class="p-space-lg bg-surface-container-lowest flex flex-col items-center gap-space-sm text-center">
+<!-- SVG Express QR Code Mock -->
+<div class="bg-surface-container-low p-3 rounded-xl flex items-center justify-center shadow-inner">
+<svg class="w-32 h-32 text-primary" fill="currentColor" viewbox="0 0 100 100">
+<rect height="24" rx="4" width="24" x="10" y="10"></rect>
+<rect fill="#faf8ff" height="16" width="16" x="14" y="14"></rect>
+<rect height="8" width="8" x="18" y="18"></rect>
+<rect height="24" rx="4" width="24" x="66" y="10"></rect>
+<rect fill="#faf8ff" height="16" width="16" x="70" y="14"></rect>
+<rect height="8" width="8" x="74" y="18"></rect>
+<rect height="24" rx="4" width="24" x="10" y="66"></rect>
+<rect fill="#faf8ff" height="16" width="16" x="14" y="70"></rect>
+<rect height="8" width="8" x="18" y="74"></rect>
+<rect height="6" width="6" x="42" y="12"></rect>
+<rect height="6" width="6" x="52" y="18"></rect>
+<rect height="8" width="8" x="42" y="28"></rect>
+<rect fill="#006c49" height="12" rx="2" width="12" x="44" y="44"></rect>
+<rect height="6" width="8" x="16" y="44"></rect>
+<rect height="10" width="6" x="28" y="48"></rect>
+<rect height="6" width="8" x="64" y="42"></rect>
+<rect height="6" width="10" x="78" y="48"></rect>
+<rect height="12" width="6" x="42" y="64"></rect>
+<rect height="8" width="10" x="52" y="74"></rect>
+<rect height="8" width="8" x="68" y="68"></rect>
+<rect height="10" width="6" x="80" y="76"></rect>
+</svg>
+</div>
+<p class="font-label-sm text-label-sm text-on-surface font-semibold">1-Tap Express Scan at Clinic Tablet</p>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Show this code at the Tooth Story reception desk for immediate check-in without form filling.</p>
+</div>
+</div>
+<!-- Quick Action Hub -->
+<div class="flex flex-col gap-space-xs">
+<button class="w-full h-12 bg-primary text-on-primary rounded-xl font-label-md text-label-md flex items-center justify-center gap-space-sm shadow-sm active:scale-95 transition-transform" id="walletBtn">
+<span class="material-symbols-outlined text-[20px]">calendar_add_on</span>
+<span>Add to Google / Apple Calendar</span>
+</button>
+<div class="grid grid-cols-2 gap-space-xs mt-1">
+<a class="h-12 bg-secondary text-on-secondary rounded-xl font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" href="https://wa.me/918000000000?text=Hi%20Tooth%20Story,%20checking%20in%20for%20booking%20TS-EC-8942">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span class="truncate">WhatsApp Chat</span>
+</a>
+<a class="h-12 bg-surface-container-high text-on-surface rounded-xl font-label-md text-label-md flex items-center justify-center gap-1.5 shadow-sm active:scale-95 transition-transform" href="https://maps.google.com/?q=Tooth+Story+Dental+Clinic+Neeladri+Nagar">
+<span class="material-symbols-outlined text-[18px] text-primary">navigation</span>
+<span class="truncate">Get Directions</span>
+</a>
+</div>
+</div>
+<!-- Anxiety-Free Pre-Visit Preparation Card -->
+<div class="bg-surface-container-lowest p-space-md rounded-xl shadow-sm flex flex-col gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-primary-fixed flex items-center justify-center text-on-primary-fixed">
+<span class="material-symbols-outlined text-[18px]">spa</span>
+</div>
+<div>
+<h2 class="font-title-md text-title-md text-on-surface leading-tight">Patient Care Preparation</h2>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Simple steps to make your appointment painless &amp; seamless</p>
+</div>
+</div>
+<!-- Interactive Checklist -->
+<div class="flex flex-col gap-space-xs" id="checklistContainer">
+<!-- Item 1 -->
+<label class="flex items-start gap-space-sm p-space-sm bg-surface-container-low rounded-xl cursor-pointer transition-colors hover:bg-surface-container">
+<input class="checklist-item mt-1 w-4 h-4 rounded text-primary focus:ring-0 accent-primary" type="checkbox"/>
+<div class="min-w-0">
+<p class="font-body-sm text-body-sm text-on-surface font-semibold">Previous Records &amp; X-Rays</p>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Carry old dental scans or prescriptions if available.</p>
+</div>
+</label>
+<!-- Item 2 -->
+<label class="flex items-start gap-space-sm p-space-sm bg-surface-container-low rounded-xl cursor-pointer transition-colors hover:bg-surface-container">
+<input class="checklist-item mt-1 w-4 h-4 rounded text-primary focus:ring-0 accent-primary" type="checkbox"/>
+<div class="min-w-0">
+<p class="font-body-sm text-body-sm text-on-surface font-semibold">Avoid extreme food temperatures</p>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Skip ice-cold water or very hot beverages 1 hour prior to your visit.</p>
+</div>
+</label>
+<!-- Item 3 -->
+<label class="flex items-start gap-space-sm p-space-sm bg-surface-container-low rounded-xl cursor-pointer transition-colors hover:bg-surface-container">
+<input class="checklist-item mt-1 w-4 h-4 rounded text-primary focus:ring-0 accent-primary" type="checkbox"/>
+<div class="min-w-0">
+<p class="font-body-sm text-body-sm text-on-surface font-semibold">Arrive 10 minutes early</p>
+<p class="font-body-sm text-[12px] text-on-surface-variant">Relaxes jaw muscles and gives ample time for digital scan registration.</p>
+</div>
+</label>
+</div>
+<!-- Checklist Progress Notification -->
+<div class="hidden items-center gap-space-xs bg-secondary/10 px-space-sm py-1.5 rounded-lg" id="checklistFeedback">
+<span class="material-symbols-outlined text-[16px] text-secondary">thumb_up</span>
+<span class="font-label-sm text-[11px] text-secondary font-semibold">All set! You are completely prepared for Dr. Dhanashree.</span>
+</div>
+<!-- Delay / Reschedule WhatsApp Direct Trigger -->
+<div class="pt-2 flex items-center justify-between">
+<div class="min-w-0">
+<p class="font-label-sm text-label-sm text-on-surface font-semibold">Running late or stuck in traffic?</p>
+<p class="font-body-sm text-[11px] text-on-surface-variant">We hold your slot for 15 minutes.</p>
+</div>
+<a class="px-space-sm py-1.5 bg-surface-container text-on-surface rounded-full font-label-sm text-[11px] font-bold shrink-0 hover:bg-surface-container-high transition-colors" href="https://wa.me/918000000000?text=Hi%20Desk,%20I%20am%20running%20slightly%20late%20for%20my%206PM%20appointment%20(Ref:%20TS-EC-8942)">
+          Notify Desk
+        </a>
+</div>
+</div>
+<!-- Live Clinic Desk Pulse & Route Context -->
+<div class="bg-surface-container-low p-space-md rounded-xl flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2.5 h-2.5 rounded-full bg-secondary animate-ping"></span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface">Clinic Live Status</span>
+</div>
+<span class="font-label-sm text-[11px] text-secondary font-semibold bg-secondary-container/40 px-2 py-0.5 rounded-full">Neeladri Nagar Hub</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+        Operatories operating on schedule. Current estimated wait time is <strong class="text-on-surface font-semibold">&lt; 7 minutes</strong>.
+      </p>
+<!-- Location Map Snippet -->
+<div class="relative w-full h-32 rounded-xl overflow-hidden mt-1" data-alt="Stylized modern medical clinic map view showing Electronics City Neeladri Road Bangalore with clear dental pin marker" data-location="Tooth Story Dental Clinic Neeladri Nagar Electronics City Bengaluru" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAefTTYs_7b56_J3CmER--oSbpUaHl0XbNVtJTrjic2u3RJUBV-l9Qi6-peVDk1PyyKeHfYGlsfeNzke-PlqvOn6HoQHoUlvgRSWUpD5JOS_UsmJHyyQ-pl80Z5jdI-OXeWd3oNlgauw4dFdje_hNkPYcxmDLmdgz8ulvGNWoTpqyrjNa9xeetTRFXEauSqB5_78ZA5GAVRDwEBvav_ptvzht_0uYh8ahecv3jPQXHGcPDTgZKj9JL-Cg')">
+<div class="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent flex items-end p-space-sm">
+<div class="flex items-center gap-1.5 text-on-primary">
+<span class="material-symbols-outlined text-[16px] text-secondary-container">pin_drop</span>
+<span class="font-label-sm text-[11px]">Opp. Ajmera Infinity, 2 min from Wipro Gate 5</span>
+</div>
+</div>
+</div>
+<!-- Quick Desk Call Support -->
+<div class="flex items-center justify-between pt-1">
+<div class="flex items-center gap-1 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px]">call</span>
+<span class="font-label-sm text-[12px]">Helpline: 090369 40356</span>
+</div>
+<a class="font-label-sm text-label-sm text-primary font-bold hover:underline" href="tel:09036940356">
+          Call Reception
+        </a>
+</div>
+</div>
+<!-- Toast Prompt Container (Hidden by Default) -->
+<div class="fixed bottom-20 left-4 right-4 z-40 hidden bg-on-surface text-inverse-on-surface p-space-md rounded-xl shadow-xl flex items-center justify-between transition-all duration-300" id="actionToast">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-secondary-container text-[20px]">check_circle</span>
+<span class="font-label-sm text-label-sm truncate" id="toastMsg">Appointment added to Calendar!</span>
+</div>
+<button class="font-label-sm text-secondary-fixed text-[12px] font-bold uppercase ml-2" id="toastClose">Dismiss</button>
+</div>
+</div>
+</div>
+<script>
+  (function() {
+    // Calendar reminder simulated trigger
+    const walletBtn = document.getElementById('walletBtn');
+    const toast = document.getElementById('actionToast');
+    const toastMsg = document.getElementById('toastMsg');
+    const toastClose = document.getElementById('toastClose');
+
+    function showToast(text) {
+      if (!toast) return;
+      toastMsg.innerText = text;
+      toast.classList.remove('hidden');
+      setTimeout(() => {
+        toast.classList.add('hidden');
+      }, 4000);
+    }
+
+    if (walletBtn) {
+      walletBtn.addEventListener('click', function() {
+        showToast('Event created: Tooth Story (Today 6:00 PM)');
+      });
+    }
+
+    if (toastClose) {
+      toastClose.addEventListener('click', function() {
+        toast.classList.add('hidden');
+      });
+    }
+
+    // Pre-visit checklist completion feedback
+    const checkboxes = document.querySelectorAll('.checklist-item');
+    const feedback = document.getElementById('checklistFeedback');
+
+    checkboxes.forEach(box => {
+      box.addEventListener('change', () => {
+        const checkedCount = document.querySelectorAll('.checklist-item:checked').length;
+        if (checkedCount === checkboxes.length) {
+          feedback.classList.remove('hidden');
+          feedback.classList.add('flex');
+        } else {
+          feedback.classList.add('hidden');
+          feedback.classList.remove('flex');
+        }
+      });
+    });
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/90 backdrop-blur-xl shadow-[0_-4px_20px_rgba(10,92,103,0.06)]" data-active-classes="text-primary font-bold"><div class="flex items-center justify-around h-16 px-space-sm"><a aria-label="Clinic Home" class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="home-clinic" href="#"><span class="material-symbols-outlined text-[22px]">local_hospital</span><span class="font-label-sm text-[11px]">Clinic</span></a><a aria-label="Dental Treatments" class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="treatments-catalog" href="#"><span class="material-symbols-outlined text-[22px]">dentistry</span><span class="font-label-sm text-[11px]">Treatments</span></a><a aria-label="Book Appointment" class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="appointment-slots" href="#"><div class="w-13 h-13 rounded-full bg-primary-container text-on-primary shadow-[0_8px_20px_rgba(10,92,103,0.35)] flex items-center justify-center active:scale-95 transition-transform"><span class="material-symbols-outlined text-[24px]">calendar_month</span></div><span class="font-label-sm text-[10px] font-bold text-primary mt-1">Book Now</span></a><a aria-label="WhatsApp Quick Desk" class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-secondary transition-colors" href="https://wa.me/918000000000"><span class="material-symbols-outlined text-[22px]">chat</span><span class="font-label-sm text-[11px] font-semibold text-secondary">WhatsApp</span></a><a aria-label="My Appointments" class="flex flex-col items-center justify-center gap-1 min-w-[56px] h-12 text-on-surface-variant transition-colors" data-path="my-appointments" href="#"><span class="material-symbols-outlined text-[22px]">history_edu</span><span class="font-label-sm text-[11px]">Visits</span></a></div></nav></body></html>

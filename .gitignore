@@ -1,0 +1,91 @@
+# ==========================================
+# Tooth Story Dental Clinic - .gitignore
+# ==========================================
+
+# Dependencies
+/node_modules
+/.pnp
+.pnp.js
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Next.js Build Outputs & Cache
+/.next/
+/out/
+/build
+/dist
+.next-boost
+*.tsbuildinfo
+next-env.d.ts
+
+# Environment & Secret Variables (NEVER commit secrets to GitHub)
+.env
+.env*.local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+*.cert
+*.pfx
+*.p12
+service-account*.json
+firebase-adminsdk*.json
+
+# Debug Logs & Reports
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+# Testing & Coverage
+/coverage
+/.nyc_output
+/cypress/videos
+/cypress/screenshots
+.playwright/
+test-results/
+
+# Operating System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE & Editor Directories
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
+*~
+
+# Vercel & Firebase Emulators/State
+.vercel
+.firebase/
+firebase-debug.log*
+firestore-debug.log*
+ui-debug.log*
+
+# Temporary & Local Scratchpad
+/scratch/
+.temp/
+.cache/

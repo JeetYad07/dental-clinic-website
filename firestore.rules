@@ -1,0 +1,69 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    
+    // Helper functions
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+    
+    function isAdmin() {
+      return isAuthenticated() && (
+        request.auth.token.role == 'admin' ||
+        get(/databases/$(database)/documents/adminUsers/$(request.auth.uid)).data.role == 'admin'
+      );
+    }
+    
+    function isStaff() {
+      return isAuthenticated() && (
+        request.auth.token.role in ['admin', 'staff'] ||
+        get(/databases/$(database)/documents/adminUsers/$(request.auth.uid)).data.role in ['admin', 'staff']
+      );
+    }
+
+    // Public website can read treatments/services, doctors, public reviews, gallery, and clinic settings
+    match /treatments/{treatmentId} {
+      allow read: if true;
+      allow write: if isStaff();
+    }
+
+    match /doctors/{doctorId} {
+      allow read: if true;
+      allow write: if isStaff();
+    }
+
+    match /reviews/{reviewId} {
+      allow read: if true;
+      allow write: if isStaff();
+    }
+
+    match /gallery/{galleryId} {
+      allow read: if true;
+      allow write: if isStaff();
+    }
+
+    match /settings/{settingId} {
+      allow read: if true;
+      allow write: if isStaff();
+    }
+
+    // Appointments: Public can CREATE (book) appointment requests only. Reading and managing is restricted to staff.
+    match /appointments/{appointmentId} {
+      allow create: if request.resource.data.keys().hasAll(['patientName', 'phone', 'preferredDate', 'status'])
+                    && request.resource.data.status == 'pending'
+                    && request.resource.data.source in ['website', 'whatsapp'];
+      allow read, update, delete: if isStaff();
+    }
+
+    // Patients: Only authenticated clinic staff can access patient database
+    match /patients/{patientId} {
+      allow read, write: if isStaff();
+    }
+
+    // Admin Users collection: Strictly restricted to admins
+    match /adminUsers/{userId} {
+      allow read: if isAuthenticated() && (request.auth.uid == userId || isAdmin());
+      allow write: if isAdmin();
+    }
+  }
+}
