@@ -6,6 +6,7 @@ import { MobileStickyBar } from '@/components/layout/MobileStickyBar';
 import { WhatsAppBookingWidget } from '@/components/booking/WhatsAppBookingWidget';
 import { TreatmentCard } from '@/components/treatments/TreatmentCard';
 import { ReviewCard } from '@/components/reviews/ReviewCard';
+import { ClinicVideoTourSection } from '@/components/ui/ClinicVideoTourSection';
 import { getTreatments } from '@/services/treatments';
 import { getReviews } from '@/services/reviews';
 import { getDoctors } from '@/services/doctors';
@@ -262,6 +263,9 @@ export default async function HomePage() {
             </div>
           </div>
         </section>
+
+        {/* INTERACTIVE VIDEO TOUR & SYSTEM WALKTHROUGH SECTION */}
+        <ClinicVideoTourSection />
 
         {/* CLINIC LOCATION & VISIT DETAILS SECTION */}
         <section className="w-full bg-white py-20 sm:py-28">

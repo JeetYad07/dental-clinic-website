@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { Header } from '@/components/layout/Header';
 import { Footer } from '@/components/layout/Footer';
 import { MobileStickyBar } from '@/components/layout/MobileStickyBar';
+import { ClinicVideoTourSection } from '@/components/ui/ClinicVideoTourSection';
 import {
   ShieldCheck,
   Award,
@@ -124,6 +125,9 @@ export default function AboutPage() {
               </div>
             </div>
           </div>
+
+          {/* Virtual Clinic Video Tour Section */}
+          <ClinicVideoTourSection />
         </div>
       </main>
 
