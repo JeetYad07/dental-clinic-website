@@ -14,7 +14,7 @@ import {
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="w-full bg-slate-900 text-slate-300 pt-16 pb-12 border-t border-slate-800">
+    <footer className="w-full bg-slate-900 text-slate-300 pt-16 pb-32 sm:pb-28 lg:pb-12 border-t border-slate-800">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main 4-Column Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
@@ -135,8 +135,12 @@ export const Footer: React.FC = () => {
             <Link href="/contact" className="hover:text-slate-300 transition-colors">
               Contact
             </Link>
-            <Link href="/admin" className="text-cyan-400 hover:text-cyan-300 transition-colors font-bold">
-              Clinic Staff Portal
+            <Link
+              href="/admin"
+              className="inline-flex items-center gap-1.5 px-3 py-1 rounded-lg bg-slate-800 hover:bg-slate-700 text-cyan-400 hover:text-cyan-300 transition-colors font-bold border border-slate-700/80 shadow-xs"
+            >
+              <Shield className="w-3.5 h-3.5 text-cyan-400" />
+              <span>Clinic Staff Portal</span>
             </Link>
           </div>
         </div>

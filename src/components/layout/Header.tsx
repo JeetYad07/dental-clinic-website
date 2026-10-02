@@ -13,6 +13,7 @@ import {
   ShieldCheck,
   MapPin,
   ChevronRight,
+  Lock,
 } from 'lucide-react';
 
 export const Header: React.FC = () => {
@@ -116,7 +117,7 @@ export const Header: React.FC = () => {
       {/* Mobile Menu Drawer Overlay */}
       {mobileMenuOpen && (
         <div className="fixed inset-0 z-40 bg-black/40 backdrop-blur-sm lg:hidden animate-in fade-in duration-200">
-          <div className="fixed top-20 right-0 bottom-0 w-full max-w-sm bg-surface p-6 shadow-2xl overflow-y-auto flex flex-col justify-between animate-in slide-in-from-right duration-200 border-l border-outline-variant/30">
+          <div className="fixed top-16 sm:top-20 right-0 bottom-0 w-full max-w-sm bg-surface p-5 sm:p-6 shadow-2xl overflow-y-auto flex flex-col justify-between gap-6 animate-in slide-in-from-right duration-200 border-l border-outline-variant/30">
             <div className="space-y-4">
               <div className="flex items-center justify-between pb-3 border-b border-outline-variant/30">
                 <div className="flex items-center gap-2">
@@ -149,7 +150,7 @@ export const Header: React.FC = () => {
                 ))}
               </div>
 
-              {/* Patient Portal Link */}
+              {/* Patient Care Tracker Link */}
               <div className="pt-2 border-t border-outline-variant/30 space-y-1">
                 <Link
                   href="/patient-portal"
@@ -167,11 +168,11 @@ export const Header: React.FC = () => {
               </div>
             </div>
 
-            {/* Mobile Bottom Contact Box */}
-            <div className="pt-6 border-t border-outline-variant/30 space-y-3">
+            {/* Mobile Bottom Contact Box & Staff Access */}
+            <div className="pt-4 border-t border-outline-variant/30 space-y-2.5">
               <a
                 href="tel:09036940356"
-                className="flex items-center justify-center gap-2 w-full h-11 rounded-xl bg-surface-container-high text-primary font-bold text-sm"
+                className="flex items-center justify-center gap-2 w-full h-11 rounded-xl bg-surface-container-high text-primary font-bold text-sm hover:bg-surface-container-highest transition-colors active:scale-95"
               >
                 <Phone className="w-4 h-4" />
                 <span>Call Desk: 090369 40356</span>
@@ -180,11 +181,21 @@ export const Header: React.FC = () => {
                 href="https://wa.me/919036940356"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center gap-2 w-full h-11 rounded-xl bg-[#25D366] text-white font-bold text-sm shadow-md"
+                className="flex items-center justify-center gap-2 w-full h-11 rounded-xl bg-[#25D366] text-white font-bold text-sm shadow-md hover:bg-[#1EBE5D] transition-colors active:scale-95"
               >
                 <MessageCircle className="w-4 h-4 fill-white" />
                 <span>WhatsApp Instant Booking</span>
               </a>
+
+              {/* Clinic Staff Portal Link directly at bottom of Call Reception */}
+              <Link
+                href="/admin"
+                onClick={() => setMobileMenuOpen(false)}
+                className="flex items-center justify-center gap-2 w-full h-11 rounded-xl bg-slate-900 hover:bg-slate-800 text-cyan-300 font-bold text-xs shadow-sm transition-all border border-slate-700 active:scale-95"
+              >
+                <Lock className="w-3.5 h-3.5 text-cyan-400" />
+                <span>Clinic Staff & Reception Portal</span>
+              </Link>
             </div>
           </div>
         </div>

@@ -139,15 +139,15 @@ export default function AdminDashboardPage() {
         </div>
 
         {/* Quick Search & Broadcast Bar */}
-        <div className="flex items-center gap-3 flex-wrap">
-          <div className="relative min-w-[260px]">
+        <div className="flex items-center gap-2.5 sm:gap-3 flex-wrap w-full lg:w-auto">
+          <div className="relative flex-1 sm:flex-initial sm:min-w-[260px] w-full sm:w-auto">
             <Search className="w-4 h-4 absolute left-3.5 top-1/2 -translate-y-1/2 text-outline" />
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              placeholder="Search phone (+91) or patient name..."
-              className="w-full pl-10 pr-4 py-2 rounded-xl bg-surface-container-lowest text-on-surface text-xs font-semibold placeholder:text-outline shadow-sm border border-outline-variant/30 outline-none focus:ring-2 focus:ring-primary"
+              placeholder="Search phone or patient name..."
+              className="w-full pl-10 pr-4 py-2 rounded-xl bg-surface-container-lowest text-on-surface text-xs font-semibold placeholder:text-outline shadow-xs border border-outline-variant/30 outline-none focus:ring-2 focus:ring-primary"
             />
           </div>
 
@@ -155,13 +155,13 @@ export default function AdminDashboardPage() {
             onClick={() =>
               showToast('Opening Broadcast Composer: Neeladri Road Patient Cohort (Phase I)')
             }
-            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-primary text-on-primary text-xs font-bold shadow-sm hover:bg-primary-container transition-all"
+            className="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-primary text-on-primary text-xs font-bold shadow-xs hover:bg-primary-container transition-all active:scale-95 shrink-0"
           >
             <Send className="w-3.5 h-3.5" />
             <span>Quick Broadcasts</span>
           </button>
 
-          <div className="flex items-center gap-1.5 bg-surface-container-lowest px-3 py-2 rounded-xl shadow-sm border border-outline-variant/20 text-xs">
+          <div className="hidden sm:flex items-center gap-1.5 bg-surface-container-lowest px-3 py-2 rounded-xl shadow-xs border border-outline-variant/20 text-xs shrink-0">
             <Clock className="w-3.5 h-3.5 text-secondary" />
             <span className="font-bold text-on-surface">Open till 10:00 PM</span>
           </div>
